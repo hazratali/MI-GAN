@@ -120,12 +120,10 @@ Results are generated in **evaluation** folder. Hierarchy of the folder is
 *Area Under the Curve* (AUC), *Precision and Recall* (PR), *Receiver Operating Characteristic* (ROC)  
 
 
-#Support
-
+##Support
 We would be offer any possible support as long as it does not have conflict with our own work committements. 
 
-#Disclaimer
-
+##Disclaimer
 In no event shall we be liable to any party for direct, indirect, special, incidental or consequential damages, including lost profis, arising out of the use of this software code and its documentation.
 
 
