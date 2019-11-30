@@ -2,7 +2,6 @@
 # MI-GAN
 
 ##Data
-
 Copy your data into the two sub-directories DRIVE and STARE inside the directory Data.
 To save space, we have removed any image data from many of the sub-directories however, we have kept the empty directory there so that you may still be able to use the same path for a sub-directory. This is to help you to retain the hierarchy of the folders.
 
