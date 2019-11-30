@@ -18,17 +18,9 @@ Avaiable at: [https://link.springer.com/article/10.1007/s10916-018-1072-9]
 
 PDF arxiv link: [https://arxiv.org/abs/1810.00551]
 
+```
 
-
-
-## Improvements Compared to Keras Code
-1. Data augmentation is changed from off-line to online process, it solved memory limitation problem but it will slow down the training
-2. Add train_interval FLAGS to control training iterations between generator and discriminator, for normal GAN train_interval is 1
-3. The best model is saved based on the sum of the AUC_PR and AUC_ROC on validation data
-4. Add sampling function to check generated results to know what's going on
-5. Measurements are plotted on tensorboard in training process
-6. The code is written more structurally  
-*Area Under the Curve* (AUC), *Precision and Recall* (PR), *Receiver Operating Characteristic* (ROC)
+#How to use this code.
 
 ## Package Dependency
 - tensorflow 1.16.0
@@ -122,4 +114,21 @@ Results are generated in **evaluation** folder. Hierarchy of the folder is
     +-- measures
     +-- vessels
 ```
+
+**comparison:** difference maps between V-GAN and gold standard  
+**measures:** AUC_ROC and AUC_PR curves  
+**vessels:** vessels superimposed on segmented masks  
+*Area Under the Curve* (AUC), *Precision and Recall* (PR), *Receiver Operating Characteristic* (ROC)  
+
+
+#Support
+
+We would be offer any possible support as long as it does not have conflict with our own work committements. 
+
+#Disclaimer
+
+In no event shall we be liable to any party for direct, indirect, special, incidental or consequential damages, including lost profis, arising out of the use of this software code and its documentation.
+
+
+
 
