@@ -1,11 +1,12 @@
 # Generative Adversarial Network for Medical Imaging
 # MI-GAN
 
-##Data
+## Data
+
 Copy your data into the two sub-directories DRIVE and STARE inside the directory Data.
 To save space, we have removed any image data from many of the sub-directories however, we have kept the empty directory there so that you may still be able to use the same path for a sub-directory. This is to help you to retain the hierarchy of the folders.
 
-##Credits
+## Credits
 
 **Contribution from Talha Iqbal and Hazrat Ali**
 
@@ -17,8 +18,9 @@ Avaiable at: [https://link.springer.com/article/10.1007/s10916-018-1072-9]
 
 PDF arxiv link: [https://arxiv.org/abs/1810.00551]
 
+---
 
-#How to use this code.
+# How to use this code.
 
 ## Package Dependency
 - tensorflow 1.16.0
@@ -120,10 +122,12 @@ Results are generated in **evaluation** folder. Hierarchy of the folder is
 
 
 
-##Support
+## Support
+
 We would be offer any possible support as long as it does not have conflict with our own work committements. 
 
-##Disclaimer
+## Disclaimer
+
 In no event shall we be liable to any party for direct, indirect, special, incidental or consequential damages, including lost profis, arising out of the use of this software code and its documentation.
 
 
