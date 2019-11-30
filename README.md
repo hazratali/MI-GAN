@@ -118,7 +118,7 @@ Results are generated in **evaluation** folder. Hierarchy of the folder is
 **measures:** AUC_ROC and AUC_PR curves  
 **vessels:** vessels superimposed on segmented masks  
 *Area Under the Curve* (AUC), *Precision and Recall* (PR), *Receiver Operating Characteristic* (ROC)  
-```
+
 
 #Support
 
