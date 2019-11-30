@@ -34,9 +34,6 @@ To save space, we have removed any image data from many of the sub-directories h
 - scikit-learn 0.19.0
 - scipy 0.19.0
 
-## Download Data
-Original data file strucure was modified for convenience by [Jaemin Son](https://www.vuno.co/team).  
-Download data from [here](https://bitbucket.org/woalsdnd/v-gan/src/04e60e8baee6d03721b0d6b0990255bfa115dab6?at=master) and copy data file in the same directory with codes file as following Directory Hierarchy.  
 
 ## Directory Hierarchy
 ```
@@ -126,7 +123,7 @@ Results are generated in **evaluation** folder. Hierarchy of the folder is
 
 ## Support
 
-We would be offer any possible support as long as it does not have conflict with our own work committements. 
+We would be offer any possible support as long as it does not have conflict with our own work commitments. 
 
 ## Disclaimer
 
