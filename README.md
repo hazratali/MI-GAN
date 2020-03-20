@@ -39,22 +39,22 @@ To save space, we have removed any image data from many of the sub-directories h
 ```
 .
 +-- codes
-¦   +-- dataset.py
-¦   +-- evaluation.py
-¦   +-- main.py
-¦   +-- model.py
-¦   +-- solver.py
-¦   +-- TensorFlow_utils.py
-¦   +-- utils.py
+Â¦   +-- dataset.py
+Â¦   +-- evaluation.py
+Â¦   +-- main.py
+Â¦   +-- model.py
+Â¦   +-- solver.py
+Â¦   +-- TensorFlow_utils.py
+Â¦   +-- utils.py
 +-- data
-¦   +-- DRIVE
-¦   +-- STARE
+Â¦   +-- DRIVE
+Â¦   +-- STARE
 +-- evaluation (get after running evaluation.py)
-¦   +-- DRIVE
-¦   +-- STARE
+Â¦   +-- DRIVE
+Â¦   +-- STARE
 +-- results
-¦   +-- DRIVE
-¦   +-- STARE
+Â¦   +-- DRIVE
+Â¦   +-- STARE
 ```
 **codes:** source codes  
 **data:** original data. File hierarchy is modified for convenience.  
@@ -66,60 +66,6 @@ Move to **codes** folder and run main.py
 ```
 python main.py --train_interval=<int> --ratio_gan2seg=<int> --gpu_index=<int> --discriminator=[pixel|patch1|patch2|image] --batch_size=<int> --dataset=[DRIVE|STARE] --is_test=False
 ```  
-- models will be saved in './codes/{}/model\_{}\_{}\_{}'.format(dataset, disriminator, train_interval, batch_size)' folder, e.g., './codes/STARE/model_image_100_1' folder.  
-- smapled images will be saved in './codes/{}/sample_\_{}\_{}\_{}'.format(dataset, disriminator, train_interval, batch_size)', e.g., './codes/STARE/sample_image_100_1' folder.  
-
-### Arguments
-**train_interval:** training interval between discriminator and generator, default: 1    
-**ratio_gan2seg:** ratio of gan loss to seg loss, default: 10  
-**gpu_index:** gpu index, default: 0  
-**discriminator:** type of discriminator [pixel|patch1|patch2|image], default: image  
-**batch_size:** batch size, default: 1  
-**dataset:** dataset name [DRIVE|STARE], default: STARE  
-**is_test:** set mode, default: False  
-
-**learning_rate:** initial learning rate for Adam, default: 2e-4  
-**beta1:** momentum term of Adam, default: 0.5  
-**iters:** number of iterations, default: 50000  
-**print_freq:** print loss information frequency, default: 100  
-**eval_freq:** evaluation frequency on validation data, default: 500  
-**sample_freq:** sample generated image frequency, default: 200  
-
-**checkpoint_dir:** models are saved here, default: './checkpoints'  
-**sample_dir:** sampled images are saved here, default: './sample'  
-**test_dir:** test images are saved here, default: './test'  
-
-## Test
-```
-python main.py --is_test=True --discriminator=[pixel|patch1|patch2|image] --batch_size=<int> --dataset=[DRIVE|STARE]
-```
-- Outputs of inferece are generated in 'seg_result_{}\_{}\_{}'.format(discriminator, train_interval, batch_size) folder, e.g., './codes/STARE/seg_result_image_100_1' folder.  
-- Make sure model already trained with defined dataset, discriminator, training interval, and batch size.
-
-## Evaluation
-**Note:** Copy predicted vessel images to the ./results/\[DRIVE|STARE\]/V-GAN folder  
-```
-python evaluation.py
-```
-Results are generated in **evaluation** folder. Hierarchy of the folder is  
-```
-.
-+-- DRIVE
-¦   +-- comparison
-¦   +-- measures
-¦   +-- vessels
-+-- STARE
-    +-- comparison
-    +-- measures
-    +-- vessels
-```
-
-**comparison:** difference maps between V-GAN and gold standard  
-**measures:** AUC_ROC and AUC_PR curves  
-**vessels:** vessels superimposed on segmented masks  
-*Area Under the Curve* (AUC), *Precision and Recall* (PR), *Receiver Operating Characteristic* (ROC)  
-
-
 
 ## Support
 
